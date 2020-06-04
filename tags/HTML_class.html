@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="html_class">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Class</title>
+  <style>
+
+    .cities {
+      background-color: black;
+      color: white;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    body{
+      background: linear-gradient(to bottom, #990099 0%, #ff0000 100%);
+      font-family: "Oswald";
+    }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <a href="../index.html#index" style="float: right;">back to home</a>
+  <h1 id="class">HTML "Class" Attribute</h1>
+  <ol type="i">
+    <li>
+      The HTML class attribute is used to define equal styles for elements with the same 
+      class name. So, all HTML elements with the same class attribute will get the same style.
+      Here we have three <b>< div></b> elements that point to the same class name:
+      <div style="float: right;">
+          <div class="cities">
+            <h2>London</h2>
+            <p>London is the capital of England.</p>
+          </div>
+          
+          <div class="cities">
+            <h2>Paris</h2>
+            <p>Paris is the capital of France.</p>
+          </div>
+          
+          <div class="cities">
+            <h2>Tokyo</h2>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+      </div>
+      <pre> <b>
+        < head>
+          < style>
+          .cities {
+            background-color: black;
+            color: white;
+            margin: 20px;
+            padding: 20px;
+          }
+          < /style>
+          < /head>
+          < body>
+          < div class="cities">
+            < h2>London< /h2>
+            < p>London is the capital of England.< /p>
+          < /div>
+          
+          < div class="cities">
+            < h2>Paris< /h2>
+            < p>Paris is the capital of France.< /p>
+          < /div>
+          
+          < div class="cities">
+            < h2>Tokyo< /h2>
+            < p>Tokyo is the capital of Japan.< /p>
+          < /div>
+          
+          < /body>
+        </b></pre>
+    </li>
+    <li>
+      The HTML class attribute can also be used on inline elements:
+      <pre> <b>
+        < head>
+          < style>
+          span.note {
+            font-size: 120%;
+            color: red;
+          }
+          < /style>
+          < /head>
+          < body>
+          < h1>My < span class="note">Important< /span> Heading< /h1>
+          < p>This is some < span class="note">important< /span> text.< /p>
+          < /body>
+        </b></pre>
+    </li>
+    <li>
+      Tip: The class attribute can be used on any HTML element. <br>
+      Note: The class name is case sensitive! <br>
+      <a href="https://www.w3schools.com/html/html_classes.asp">For more</a>
+    </li>
+  </ol>
+
+  <a href="#class" style="float: right;">back to top</a>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="picture_tag">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Picture Tag</title>
+  <style>
+    body{
+    background: linear-gradient(to right, #DBD5A4 0%, #649173 100%);
+    font-family: "Oswald";
+  }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="../index.html#index" style="float: right;">back to home</a>
+  <h1 id="pictureTag">HTML "picture" tag <a href="https://www.w3schools.com/html/html_images_picture.asp">
+    <button style="background-color: #649173;">Resource</button></a></h1>
+  <ol type="i">
+    <li>
+      The picture element allows us to display different pictures for 
+      different devices or screen sizes.
+    </li>
+    <li>The <b>< picture></b> element contains a number of <b>< source></b> 
+      elements, each referring to different image sources. This way the 
+      browser can choose the image that best fits the current view and/or device.</li>
+    <li>
+      Resize the browser to see different versions of the picture loading at 
+      different viewport sizes. The browser looks for the first source element 
+      where the media query matches the user's current viewport width, and 
+      fetches the image specified in the srcset attribute.
+    </li>
+    <li>Each <b>< source></b> element have attributes describing when their 
+      image is the most suitable. <br>
+    <b>
+      < picture>
+      < source media="(min-width: 650px)" srcset="picture1.jpg">
+      < source media="(min-width: 465px)" srcset="picture2.jpg">
+      < img src="picture3.jpg">
+      < /picture>
+  </b> <br>
+  <picture>
+    <source media="(min-width: 650px)" srcset="picture1.jpg">
+    <source media="(min-width: 465px)" srcset="picture2.jpg">
+    <img src="picture3.jpg" width="200px" style="float: right;">
+  </picture>
+    </li>
+    <li>
+      The img element is required as the last child tag of the picture declaration block.
+      The img element is used to provide backward compatibility for browsers that do not support 
+      the picture element, or if none of the source tags matched.
+    </li>
+  </ol>
+</body>
+</html>

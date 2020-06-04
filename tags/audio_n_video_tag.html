@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="audioNvideo">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML video</title>
+
+  <style>
+    body{
+    background: linear-gradient(to left, #1e130c 0%, #9a8478 100%);
+    font-family: "Oswald";
+  }
+  </style>
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="../index.html#index" style="float: right; color: #9a8478;">back to home</a>
+
+  <h1 id="audio_video">HTML Video & Audio</h1>
+  <ol>
+    <li>The HTML5 <b>< video></b> element specifies a standard way to embed a video in a web page.</li>
+    <li>The HTML5 <b>< audio></b> element specifies a standard way to embed audio in a web page.</li>
+    <li>Before HTML5, a video & audio could only be played in a browser with a plug-in (like flash).</li>
+    <li>
+      <b>
+        <pre>
+          <--Internal Video-->
+            < video src="/img/video.mp4" width="300" controls>
+            Your browser does not support the video tag.
+            < /video>
+
+          <--External Video-->
+            < iframe src="https://www.youtube.com/embed/wg-WvrSTf7k" frameborder="0">
+            < /iframe>
+      </pre>
+      </b>
+    </li>
+    <li> 
+      <em>Examples:</em> <br>
+
+      <video src="../img/video.mp4" width="200" controls>video</video>
+      <!-- <video src="img/video.mp4" width="200" autoplay>lomotif</video> -->
+      
+      <iframe src="https://www.youtube.com/embed/wg-WvrSTf7k" frameborder="0"></iframe>
+    </li>
+    <li><br>
+      <audio src="audio1.mp3" controls></audio></li>
+    <li>
+      <u style="font"><strong>How it Works</strong></u>
+      <ul>
+        <li>The controls attribute adds video controls, like play, pause, and volume.</li>
+        <li>It is a good idea to always include width and height attributes. If height and 
+          width are not set, the page might flicker while the video loads.</li>
+        <li>The <b><source></b> element allows you to specify alternative video files which 
+          the browser may choose from. The browser will use the first recognized format.</li>
+        <li>The text between the <b>< video></b> and <b>< /video></b> tags will only be 
+          displayed in browsers that do not support the <b>< video></b> element.</li>
+        <li>To start a video automatically use the "autoplay" attribute. <br>
+          NOTE: The autoplay attribute does not work in mobile devices like iPad and iPhone. </li>
+        <li>HTML5 defines DOM methods, properties, and events for the <b>< video></b> element. 
+          This allows you to load, play, and pause videos, as well as setting duration and volume.
+          There are also DOM events that can notify you when a video begins to play, is paused, etc. <br>
+          <br>
+          <div style="float: right;"> 
+            <button onclick="playPause()" style="background-color: #9a8478;">Play/Pause</button> 
+            <button onclick="makeBig()" style="background-color: #9a8478;">Big</button>
+            <button onclick="makeSmall()" style="background-color: #9a8478;">Small</button>
+            <button onclick="makeNormal()" style="background-color: #9a8478;">Normal</button>
+            <br><br>
+            <video id="video1" src="../img/video.mp4" width="200">
+              Your browser does not support HTML5 video.
+            </video>
+          </div> 
+          
+          <script> 
+          var myVideo = document.getElementById("video1"); 
+          function playPause() { 
+            if (myVideo.paused) 
+              myVideo.play(); 
+            else 
+              myVideo.pause(); 
+          } 
+
+          function makeBig() { 
+              myVideo.width = 560; 
+          } 
+          
+          function makeSmall() { 
+              myVideo.width = 320; 
+          } 
+          
+          function makeNormal() { 
+              myVideo.width = 420; 
+          } 
+          </script>
+            <b>
+            <pre>
+             <ins><em>Example: Using JavaScript</em></ins>
+
+             < div style="text-align:center"> 
+              < button onclick="playPause()">Play/Pause< /button> 
+              < button onclick="makeBig()">Big< /button>
+              < button onclick="makeSmall()">Small< /button>
+              < button onclick="makeNormal()">Normal< /button>
+              < br>< br>
+              < video id="video1" src="img/Lomotif_05-May-2017-15224458.mp4" 
+              width="420">Your browser does not support HTML5 video.
+              < /video>
+            < /div> 
+            
+            < script> 
+            var myVideo = document.getElementById("video1"); 
+            function playPause() { 
+              if (myVideo.paused) 
+                myVideo.play(); 
+              else 
+                myVideo.pause(); 
+            } 
+  
+            function makeBig() { 
+                myVideo.width = 560; 
+            } 
+            
+            function makeSmall() { 
+                myVideo.width = 320; 
+            } 
+            
+            function makeNormal() { 
+                myVideo.width = 420; 
+            } 
+            < /script>
+          </pre>
+          </b>
+        </li>
+      </ul>
+    </li>
+  </ol>
+</body>
+</html>

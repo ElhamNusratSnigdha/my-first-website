@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="html_attributes">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attributes</title>
+
+  <style>
+    body {
+      background: linear-gradient(to bottom, #990099 0%, #996600 100%); 
+      font-family: "Oswald";
+    }
+
+    table, tr{
+      border: 2px solid black;
+      border-collapse: collapse;
+    }
+
+  </style>
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="index.html#index" style="float: right;">back to home</a>
+  <h1 id="attri">About Attributes</h1>
+
+  <ol type="i">
+    <li>Attributes are used to provide additional information about HTML elements.</li>
+    <li>All HTML elements can have attributes</li>
+    <li>Attributes are always specified in the start tag</li>
+    <li>Attributes usually come in name/value pairs like: name="value"</li>
+    <li>The HTML5 standard does not require quotes(" ") around attribute values. But it 
+      is necessary to use quotes. <br> "< p title=About W3Schools>< /p>" This example 
+      will not display the title attribute correctly, because it contains a space</li>
+  </ol>
+
+  <table>
+      <thead>
+        <tr>
+          <th style="color: black; font-size: large;">
+            Attributes
+          </th>
+          <th style="color: black; font-size: large;">
+            Works
+          </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr title="href">
+
+          <td style="color: darkorange;">
+            href
+          </td>
+          <td style="color: black;">
+            The link address is specified in the "href" attribute. <br> 
+             <b> < a href="https://www.w3schools.com"> This is a link < /a> </b>
+          </td>
+        </tr>
+
+        <tr title="src">
+
+          <td style="color: darkorange;">
+            src
+          </td>
+          <td style="color: black;">
+            The filename of the image source is specified in the src attribute. <br>
+              <b>< img src="img_girl.jpg" ></b>
+          </td>
+        </tr>
+
+        <tr title="width & height">
+
+          <td style="color: darkorange;">
+            width and height
+          </td>
+          <td style="color: black;">
+            HTML images have width and height attributes, 
+              which specifies the width and height of the image <br> 
+              <b>< img src="img_girl.jpg" width="500" height="600" ></b> <br>
+            Here, width="500" means 500 pixels wide.
+          </td>
+        </tr>
+
+        <tr title="alt">
+          <td style="color: darkorange;">
+            alt
+          </td>
+          <td style="color: black;">
+            The alt attribute specifies an alternative text to be used, if an image cannot be displayed (e.g. if it does not exist).<br>
+            The value of the alt attribute can be read by screen readers. This way, someone "listening" to the webpage, e.g. a vision impaired person, can "hear" the element. <br>
+            <b>< img src="img_girl.jpg" alt="Girl with a jacket" ></b>
+          </td>
+        </tr>
+
+        <tr title="style">
+          <td style="color: darkorange;">
+            style
+          </td>
+          <td style="color: black;">
+            The style attribute is used to specify the styling of an element, like color, font, size etc. Ex: <br>
+              <table>
+                <thead>
+                  <tr>
+                    <th>
+                      works
+                    </th>
+                    <th>
+                      code
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="color: chartreuse;">
+                      Text Color:
+                    </td>
+                    <td>
+                      < p style="color:red">This is a red paragraph.< /p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="color: chartreuse;">
+                      Background Color:
+                    </td>
+                    <td>
+                      < body style="background-color:powderblue;">< /body>
+                      <h6 style="background-color:Tomato;">Tomato</h6>
+                      <h6 style="background-color:Orange;">Orange</h6>
+                      <h6 style="background-color:DodgerBlue;">DodgerBlue</h6>
+                      <h6 style="background-color:MediumSeaGreen;">MediumSeaGreen</h6>
+                      <h6 style="background-color:Gray;">Gray</h6>
+                      <h6 style="background-color:SlateBlue;">SlateBlue</h6>
+                      <h6 style="background-color:Violet;">Violet</h6>
+                      <h6 style="background-color:LightGray;">LightGray</h6>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td style="color: chartreuse;">
+                      Customized Font: 
+                    </td>
+                    <td>
+                      < h1 style="font-family:verdana;">This is a heading< /h1>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td style="color: chartreuse;">
+                      Customized Text-Size:
+                    </td>
+                    <td>
+                      < p style="font-size:160%;">This is a paragraph.< /p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td style="color: chartreuse;">
+                      Text Alignment
+                    </td>
+                    <td>
+                      < p style="text-align:center;">Centered paragraph.< /p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="font-size: larger; color:black;">You can also use more than 2 style attributes like this: <br>
+              <b>< p style="border: 2px solid black; background-color: aqua;">< /p></b></p>
+          </td>
+        </tr>
+
+        <tr title="lang">
+          <td style="color: darkorange;">
+            lang
+          </td>
+          <td style="color: black;">
+            The language is declared with the lang attribute.<br>
+            The language of the document can also be declared in the < html> tag.<br>
+            Declaring a language is important for accessibility applications (screen readers) and search engines. <br>
+            <b>< html lang="en-US">< /html> </b><br>
+            The first two letters specify the language (en). If there is a dialect, add two more letters (US).
+
+          </td>
+        </tr>
+
+        <tr title="title">
+          <td style="color: darkorange;">
+            title
+          </td>
+          <td style="color: black;">
+            The value of the title attribute will be displayed as a tooltip when you mouse over the paragraph. <br>
+            <b>< p title="I'm a tooltip"> This is a paragraph. < /p></b>
+          </td>
+        </tr>
+
+        <tr title="disabled">
+          <td style="color: darkorange;">
+            disabled
+          </td>
+          <td style="color: black;">
+            Specifies that an input element should be disabled
+          </td>
+        </tr>
+
+        <tr title="id">
+          <td style="color: darkorange;">
+            id
+          </td>
+          <td style="color: black;">
+            Specifies a unique id for an element. <a href="https://www.w3schools.com/html/html_id.asp">For Details</a>
+          </td>
+        </tr>
+
+        <tr title="class">
+          <td style="color: darkorange;">
+            class
+          </td>
+          <td style="color: black;">
+            <a href="tags/HTML_class.html">For Details</a>
+          </td>
+        </tr>
+      </tbody>
+  </table>
+
+  <a href="https://www.w3schools.com/tags/ref_attributes.asp">Reference from</a>
+
+  <a href="#attri" style="float: right;">back to top</a>
+</body>
+</html>

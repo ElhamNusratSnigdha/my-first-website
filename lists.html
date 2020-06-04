@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="lists">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Lists</title>
+  <style>
+    table,  th, td {
+      border: 2px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+    }
+
+    body{
+    background: linear-gradient(to right, #E6DADA 0%, #274046 50%);
+    font-family: "Oswald";
+  }
+  </style>
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="index.html#index" style="float: right;">back to home</a>
+  <h1 id="html_lists">HTML Lists</h1>
+
+  <ol type="i">
+    <li>HTML lists are defined with the < ul > (unordered/bullet list) or 
+      the < ol > (ordered/numbered list) tag, followed by < li > tags (list items) 
+      <b style="font-size: larger;">&searr;</b> <br>
+      <table style="float: right;"> <!--table tag-->
+        <thead> <!--"thead" table head-->
+          <tr> <!--"tr" for row-->
+            <th style="color: blueviolet;"> <!--"th" for column head-->
+              Unordered List
+            </th>
+            <th style="color:yellowgreen;">
+              Ordered List
+            </th>
+            <th style="color: aqua;">
+              Nested list
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="color: blueviolet;"> <!--"td" for column-->
+              <ul> <!--default style bold circle-->
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+              </ul>
+            
+              <ul style="list-style: square">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+              </ul>
+            
+              <ul style="list-style: circle">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+              </ul>
+            
+              <ul style="list-style: none">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+              </ul>        
+            </td>
+            <td style="color:yellowgreen;">
+              <ol>
+                <!--SHORTCUT::: "li*4"= lines you want-->
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+              </ol>
+              <ol type="A">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+              </ol>
+              <ol type="a">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+              </ol>
+              <ol type="I">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+              </ol>
+              <ol type="i">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+              </ol>        
+            </td>
+            <td style="color: aqua;">
+              <ul> 
+                <li>Item 1</li>
+                <li>Item 2
+                  <ul>
+                    <li>Nest Item 1</li>
+                    <li>Nest Item 2</li>
+                  </ul>
+                </li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+
+    <li>HTML also supports description lists. Example: <br>
+      <table style="float: right;">
+        <tr>
+        <td>
+        <dl >
+          <dt>Coffee</dt>
+          <dd>- black hot drink</dd>
+          <dt>Milk</dt>
+          <dd>- white cold drink</dd>
+        </dl>
+      </td>
+    </tr>
+      </table>
+        <pre>
+          <b>
+          < dl>
+            < dt>Coffee< /dt>
+            < dd>- black hot drink< /dd>
+            < dt>Milk< /dt>
+            < dd>- white cold drink< /dd>
+          < /dl>
+        </b>
+        </pre>
+      <p> 
+        The <b>< dl></b> tag defines the description list, the <b>< dt></b> 
+        tag defines the term (name), and the <b>< dd></b> tag describes each term.
+      </p>
+    </li>
+
+    <li>
+      By default, an ordered list will start counting from 1. If you want to 
+      start counting from a specified number, you can use the start attribute: <br>
+      <b>
+        <pre>
+        < ol start="50">
+          < li>Coffee< /li>
+          < li>Tea< /li>
+          < li>Milk< /li>
+        </ol>
+      </pre>
+      </b>
+    </li>
+
+  </ol>
+</body>
+</html>

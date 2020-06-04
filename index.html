@@ -1,0 +1,103 @@
+<!DOCTYPE html> 
+  <!--declaration for HTML5-->
+
+<html lang="en">
+  <!--the root element of an HTML page with language-->
+
+<head id="index"> 
+  <!--contains meta information about the document-->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Metadata typically define the document title, character set, styles, scripts, 
+    and other meta information.-->
+
+  <title>Learn HTML</title>
+  <!--"title" is browser's tab name & specifies a title for the document-->
+
+  <style>
+    body {
+        background: linear-gradient(to right, #00ff99 0%, #666699 100%);
+        font-family: "Oswald";
+    }
+    </style>
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+
+<body> 
+  <!--contains the visible page contents-->
+  <!--"to print a picture in the back": style="background-image: url('indexpg.png'); 
+    background-repeat: no-repeat; background-size: cover;"-->
+  
+  
+  <p title="About HTML" id="home">
+    <!--"p" defines a paragraph & "title" is to specify-->
+
+    <h1 style="font-size: 50px;">Let's Start HTML <a href="#visual HTML">
+      <button style="background-color: rgb(0, 255, 128); padding: 5px 10px;"> Visual HTML</button></a>
+    </h1> 
+
+    <img src="img/index.gif" alt="lalaal" width="200px" style="float: right;">
+    <img src="img/index.gif" alt="lalaal" width="200px" style="float: right;">
+    <img src="img/index.gif" alt="lalaal" width="200px" style="float: right;">
+
+    <ul style="list-style: square;">
+      <li>HTML is the standard markup language for creating Web pages.</li>
+      <li>HTML stands for "Hypertext Markup Language"</li>
+      <li>HTML describes the structure of a Web page</li>
+      <li>HTML consists of a series of elements</li>
+      <li>HTML elements tell the browser how to display the content</li>
+      <li>HTML elements are represented by tags</li>
+      <li>HTML tags label pieces of content such as "heading", "paragraph", "table", and so on</li>
+      <li>Browsers do not display the HTML tags, but use them to render the content of the page</li>
+      <li>HTML colors are specified using predefined color names, or RGB(red, green, blue), 
+        HEX(hexadecimal value), HSL(hue, saturation, and lightness), RGBA, HSLA values. Also, 
+        HTML supports 140 standard color names.
+      <a href="https://www.w3schools.com/colors/colors_names.asp">Here you go</a></li>
+      <li><a href="bookmark_inTheSamePage.html">HTML Links - Create a Bookmark</a></li>
+      <li><a href="https://www.w3schools.com/html/html_head.asp">About "head" & "meta" etc.</a></li>
+      <li><a href="https://www.w3schools.com/html/html_iframe.asp">About iframs</a></li>
+      <li><a href="HTML_canvas.html">HTML< canvas></a></li>
+      <li><a href="https://www.w3schools.com/html/html5_draganddrop.asp">Drag and Drop</a></li>
+    </ul>
+  </p>
+
+  <p id="visual HTML" title="HTML Page Structure" style="float: right;">
+    <img src="img/HTML Structure.png" alt="HTML Structure" width="550" style="float: right;"> <br>
+    <b style="float: right;">Only the content inside the < body > section (the white area above) 
+      is displayed in a browser. </b> 
+  </p>
+
+  <h2>Other function of HTML</h2>
+  <ul style="list-style: disc;">
+    <li><a href="heading.html">Heading</a></li>
+    <li><a href="tags.html">Tags</a></li>
+    <li><a href="attributes.html">Attributes</a></li>
+    <li><a href="doctype.html">< !DOCTYPE ></a></li>
+    <li><a href="links.html">Adding Links</a></li>
+    <li><a href="imgs.html">Adding Images</a></li>
+    <li><a href="lists.html">Adding Lists</a></li>
+    <li><a href="tags/audio_n_video_tag.html">Adding Audio/Video</a></li>
+  </ul>
+
+  <p title="Extra knowledge">
+    <h3>Extra Knowledge</h3>
+    <ol>
+      <li>The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML 
+        documents and display them.</li>
+      <li>The browser does not display the HTML tags, but uses them to determine how 
+        to display the document</li>
+    </ol>
+  </p>
+  
+  <a href="https://www.w3schools.com/html/html_intro.asp">Reference from</a>
+
+  <p style="color: pink"> <bdo dir="rtl"> <b>
+    Between, I used VS code to make it.</bdo> </b><br>
+    <a href="VisualStudioCode.html"><button style="background-color: deeppink;">VS Code shortcuts</button></a>
+  </p>
+  
+  <a href="#home" style="float: right;">back to top</a>
+  </body>
+</html>
